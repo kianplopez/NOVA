@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA - Inscription</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>NOVA</h1>
+            <p>Le choix du style</p>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="panier.html">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="inscription">
+
+            <h2>Créer un compte</h2>
+            <p>Rejoignez NOVA et découvrez notre univers.</p>
+
+            <form>
+                <p>Les champs marqués par des <span class="obligatoire">*</span> sont obligatoires.</p>
+
+                <label for="nom">Nom<span class="obligatoire"> *</span></label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+                <label for="prenom">Prénom<span class="obligatoire"> *</span></label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+
+                <label for="pseudo">Nom à afficher</label>
+                <input type="text" id="pseudo" name="pseudo" placeholder="Votre nom d'utilisateur">
+
+                <label for="email">Adresse e-mail<span class="obligatoire"> *</span></label>
+                <input type="email" id="email" name="email" placeholder="Ex: Nova2026@proton.me" required>
+
+                <label for="motdepasse">Mot de passe<span class="obligatoire"> *</span></label>
+                <input type="password" id="motdepasse" name="motdepasse" placeholder="Votre mot de passe (12 caractères minimum)" minlength="12" required>
+
+                <label for="codepostal">Code postal<span class="obligatoire"> *</span></label>
+                <input type="text" id="codepostal" name="codepostal" placeholder="Ex : 75000" required>
+
+                <div class="options-inscription">
+
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        J'accepte de recevoir des newsletters et des mails publicitaires personnalisés pour découvrir les nouveaux produits.
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="consentement" required>
+                        En soumettant ce formulaire, j'accepte que les données saisies soient collectées dans le but de traiter ma demande.<span class="obligatoire"> *</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="souvenir">
+                        Se souvenir de moi
+                    </label>
+
+                </div>
+
+                <button type="submit">Créer mon compte</button>
+
+                <a href="#" class="compte-existant">J'ai déjà un compte</a>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h1>NOVA</h1>
+        <p>Le choix du style</p>
+
+        <ul>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+
+        <p>Réseaux sociaux :</p>
+        
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.tiktok.com/">TikTok</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+
+        <p class="copyright">© 2026 NOVA - Site web créé par Kian et Mikaël dans le cadre du BTS SIO SLAM</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,804 @@
+
+
+
+
+/*Information complémentaire: Le logo NOVA (dans le header), et les éléments (dans le footer) sont clickables*/
+
+
+
+
+/*Réglages généraux de base*/
+
+
+
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #08080c;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+
+
+
+/*Réglages communs aux 3 pages (header, footer, etc..)*/
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color:#08080c;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+header p {
+    color: #a5a5b0;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+nav a {
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+footer {
+    padding: 45px 8%;
+    background-color: #0d0d13;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #a5a5b0;
+    padding-bottom: 10px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 35px;
+
+}
+
+footer a {
+    color: #c5c5ce;
+}
+
+footer a:hover {
+    color: #a855f7;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+
+/*Page principale (accueil)*/
+
+
+
+
+.bannière {
+    height: 1000px;
+    padding: 100px 10%;
+
+    background-image:
+        linear-gradient(to top, rgba(8, 8, 12, 1), transparent),
+        url("../images/bannière.jpg");
+
+    background-size: cover;
+    background-position: center 35%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bannière h2 {
+    margin-top: 6%;
+    font-size: 8vw;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+.bannière p {
+    color: #c5c5ce;
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.bouton-boutique {
+    background-color: #9333ea;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bouton-boutique:hover {
+    background-color: #a855f7;
+}
+
+.catégories {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.catégories h2, .produits-populaires h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.catégories > p, .produits-populaires > p {
+    color: #a5a5b0;
+    margin-bottom: 40px;
+}
+
+.catégories article {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 28%;
+    height: 200px;
+    margin: 10px;
+
+    border-radius: 12px;
+}
+
+.sneakers {
+    background-image: url(../images/sneakers.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.vêtements {
+    background-image: url(../images/pull.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.accessoires {
+    background-image: url(../images/hat.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.catégories article:hover {
+    border: 1px solid #9333ea;
+}
+
+.catégories h3 {
+    font-size: 24px;
+}
+
+.produits-populaires {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+main > h3 {
+    margin: 30px 8% 70px;
+    padding: 35px;
+    text-align: center;
+
+    background-color: #9333ea;
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+
+
+
+/*Page 2 (boutique)*/
+
+
+
+
+.liste-produits {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.produit {
+    width: 31%;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #252530;
+}
+
+.produit:hover {
+    border-color: #e45cff;
+}
+
+.produit img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.infos-produit {
+    padding: 22px;
+    text-align: left;
+    background-color: #15151f;
+}
+
+.infos-produit h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.infos-produit p {
+    color: #a5a5b0;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.prix {
+    display: block;
+    color: #c084fc;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.infos-produit button {
+    width: 100%;
+    padding: 13px;
+
+    background-color: #9333ea;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.infos-produit button:hover {
+    background-color: #a855f7;
+}
+
+.categorie-boutique {
+    padding: 100px 8% 70px;
+    text-align: center;
+}
+
+.categorie-boutique h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.categorie-boutique p {
+    margin-bottom: 30px;
+    color: #a5a5b0;
+}
+
+.vp {
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+
+    background-image: 
+    linear-gradient(to right, #6730ff, #ff2d2d);
+
+    margin: 28px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: none;
+}
+
+.vp:hover {
+    border: 1px solid #d12cff;
+}
+
+
+
+
+/*Page 3 (formulaire)*/
+
+
+
+
+.inscription {
+    width: 550px;
+    margin: 70px auto;
+    padding: 40px;
+
+    background-color: #111119;
+    border: 1px solid #252530;
+    border-radius: 12px;
+}
+
+.inscription h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inscription > p {
+    color: #a5a5b0;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.inscription form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inscription form > label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.inscription form > input {
+    padding: 13px;
+    margin-bottom: 22px;
+
+    background-color: #191923;
+    border: 1px solid #353541;
+    border-radius: 7px;
+
+    color: white;
+    font-size: 14px;
+}
+
+.inscription form > input:focus {
+    outline: none;
+    border-color: #9333ea;
+}
+
+.options-inscription {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.options-inscription label {
+    display: flex;
+    gap: 10px;
+
+    color: #c5c5ce;
+    font-size: 13px;
+}
+
+.options-inscription input {
+    margin-top: 3px;
+    accent-color: #9333ea;
+}
+
+.inscription button {
+    padding: 14px;
+
+    background-color: #9333ea;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.inscription button:hover {
+    background-color: #a855f7;
+}
+
+.compte-existant {
+    margin-top: 20px;
+    text-align: center;
+    color: #c084fc;
+    font-size: 14px;
+}
+
+.compte-existant:hover {
+    color: #a855f7;
+}
+
+.obligatoire {
+   color: red;
+}
+
+form p {
+    padding-bottom: 35px;
+}
+
+
+
+
+/*Adaptation pour les téléphones*/
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    .bannière {
+        padding: 70px 8%;
+    }
+
+    .bannière h2 {
+        font-size: 36px;
+    }
+
+    .catégories article {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .liste-produits {
+        flex-direction: column;
+    }
+
+    .produit {
+        width: 100%;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .categorie-boutique {
+    padding: 70px 8%;
+    text-align: center;
+    }
+
+    .categorie-boutique h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    }
+
+    .inscription {
+        width: 85%;
+        margin: 30px auto;
+        padding: 30px 20px;
+    }
+
+}
+
+
+
+
+
+
+
+/*PAGE PANIER*/
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+body {
+    background: #0d0d13;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.cart-container {
+    max-width: 1450px;
+    margin: auto;
+    padding: 55px 5%;
+}
+
+.cart-layout {
+    display: grid;
+    grid-template-columns: 1.8fr 0.9fr;
+    gap: 75px;
+}
+
+/* TITRES */
+
+.cart-title {
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.cart-count {
+    color: #858590;
+    font-size: 14px;
+}
+
+.cart-subtitle {
+    color: #92929e;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* ALERTE */
+
+.cart-alert {
+    background: #191920;
+    border: 1px solid #30303b;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+
+.cart-alert strong {
+    font-size: 14px;
+}
+
+.cart-alert p {
+    color: #a4a4af;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* PANIER VIDE */
+
+.empty-cart {
+    border: 1px solid #34343f;
+    background: #13131b;
+    padding: 65px 25px;
+    text-align: center;
+}
+
+
+.empty-cart h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.empty-cart p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #9999a5;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* BOUTON BOUTIQUE */
+
+.continue-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 280px;
+    margin: 30px auto 0;
+    padding: 17px 20px;
+    background: white;
+    color: #0d0d13;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.continue-btn:hover {
+    background: #ff3038;
+    color: white;
+}
+
+/* RESUME */
+
+.order-summary {
+    position: sticky;
+    top: 30px;
+    height: fit-content;
+}
+
+.summary-title {
+    font-size: 29px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #c1c1ca;
+    margin-bottom: 18px;
+}
+
+.summary-total {
+    border-top: 1px solid #383842;
+    padding-top: 22px;
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+}
+
+.tax-info {
+    color: #858590;
+    font-size: 12px;
+    margin-top: -8px;
+}
+
+/* PROMO */
+
+.promo {
+    display: flex;
+    gap: 8px;
+    margin-top: 35px;
+}
+
+.promo input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    background: #17171f;
+    border: 1px solid #383842;
+    color: white;
+    outline: none;
+}
+
+.promo button {
+    padding: 0 18px;
+    background: #292932;
+    border: 1px solid #555560;
+    color: white;
+    cursor: pointer;
+}
+
+#promo-message {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* COMMANDE */
+
+.checkout-btn {
+    width: 100%;
+    background: white;
+    color: #08080d;
+    padding: 18px;
+    margin-top: 25px;
+    border: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.checkout-btn:hover:not(:disabled) {
+    background: #ff3038;
+    color: white;
+}
+
+.checkout-btn:disabled {
+    opacity: .35;
+    cursor: not-allowed;
+}
+
+/* PAIEMENTS */
+
+.payment-info {
+    margin-top: 35px;
+    border-top: 1px solid #383842;
+    padding-top: 25px;
+}
+
+.payment-info h4 {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.payment-methods span {
+    border: 1px solid #42424d;
+    padding: 8px 10px;
+    color: #dedee7;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* RESPONSIVE POUR PANIER */
+
+@media(max-width: 900px) {
+
+    .cart-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .order-summary {
+        position: static;
+    }
+}
+
+@media(max-width: 550px) {
+
+    .cart-container {
+        padding: 35px 18px;
+    }
+
+    .cart-title {
+        font-size: 27px;
+    }
+
+    .summary-title {
+        font-size: 24px;
+    }
+
+    .empty-cart {
+        padding: 50px 15px;
+    }
+}

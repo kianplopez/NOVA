@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>NOVA</h1>
+            <p>Le choix du style</p>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="panier.html">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+
+<main class="cart-container">
+
+    <div class="cart-layout">
+
+        <!-- PANIER -->
+        <section class="cart-section">
+
+            <h1 class="cart-title">
+                Mon panier
+                <span class="cart-count" id="cart-count">(0 produit)</span>
+            </h1>
+
+            <p class="cart-subtitle">
+                Retrouvez ici tous les articles que vous souhaitez commander.
+            </p>
+
+            <div class="cart-alert">
+                <strong>ÇA PART VITE</strong>
+                <p>Les articles dans votre panier ne sont pas réservés.</p>
+            </div>
+
+            <div id="cart-items"></div>
+
+            <div class="empty-cart" id="empty-cart">
+
+
+                <h2>Votre panier est vide</h2>
+
+                <p>
+                    Vous n'avez pas encore ajouté d'article à votre panier.
+                    Découvrez notre collection NOVA.
+                </p>
+
+                <a href="boutique.html" class="continue-btn">
+                    Découvrir la boutique
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+        <aside class="order-summary">
+
+            <h2 class="summary-title">
+                Synthèse de la commande
+            </h2>
+
+            <div class="summary-line">
+                <span id="summary-count">0 produit</span>
+                <span id="subtotal">0,00 €</span>
+            </div>
+
+            <div class="summary-line">
+                <span>Livraison</span>
+                <span>Gratuit</span>
+            </div>
+
+            <div class="summary-line summary-total">
+                <span>Total</span>
+                <span id="total">0,00 €</span>
+            </div>
+
+            <p class="tax-info">Taxes incluses</p>
+
+
+            <button class="checkout-btn" id="checkout-btn"
+                    onclick="checkout()" disabled>
+                <span>Passer commande</span>
+                <span>→</span>
+            </button>
+
+            <div class="payment-info">
+
+                <h4>MÉTHODES DE PAIEMENT ACCEPTÉES</h4>
+
+                <div class="payment-methods">
+                    <span>VISA</span>
+                    <span>MASTERCARD</span>
+                    <span>AMEX</span>
+                    <span>PAYPAL</span>
+                    <span>G PAY</span>
+                    <span>APPLE PAY</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</main>
+    <footer>
+        <h1>NOVA</h1>
+        <p>Le choix du style</p>
+
+        <ul>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+
+        <p>Réseaux sociaux :</p>
+
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.tiktok.com/">Tiktok</a>
+        <a href="https://youtube.com">Youtube</a>
+
+        <p class="copyright">© 2026 NOVA - Site web créé par Kian et Mikaël dans le cadre du BTS SIO SLAM</p>
+    </footer>
+    
+</body>
+</html>
