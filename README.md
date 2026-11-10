@@ -26,6 +26,7 @@ NOVA est une boutique en ligne fictive proposant des chaussures, des vêtements 
 - Conception générale du site NOVA
 - Choix du thème, du concept et du design visuel du site (slogan, etc.)
 - Choix des couleurs, des polices, des tailles et de la disposition des éléments/articles
+- Création du header de toutes les pages
 - Création de la page d'accueil
 - Création de la page boutique
 - Création de la page inscription
@@ -48,6 +49,7 @@ NOVA est une boutique en ligne fictive proposant des chaussures, des vêtements 
 - Choix du concept et du design visuel de la page
 - Choix de la disposition des éléments et de leur présentation
 - Création de la navigation de la page
+- Ajout de la clickabilité des produits qui redirigent vers le panier
 - Adaptation responsive de la page pour les téléphones et les ordinateurs
 - Préparation de l'affichage des produits ajoutés depuis la boutique
 - Travail sur la présentation des articles et des informations associées au panier
